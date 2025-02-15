@@ -1,6 +1,6 @@
 # NoTimeKeeper
 
-![Photo-01](https://github.com/Guimli/NoTimeKeeper/Images/OnKonamiBoard.jpg)
+![Photo-01](https://github.com/Guimli/NoTimeKeeper/blob/main/Images/OnKonamiBoard.jpg)
 
 During one of our evenings at the Arcade Club, a Koname Silent Scope cabinet displayed the dreaded error message: P1!
 This error is known to indicate that the TimeKeeper, a NVRAM used to store the cabinet's settings and scores is running low on battery power and needs replacing.

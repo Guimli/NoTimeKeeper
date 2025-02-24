@@ -2,7 +2,7 @@
 
 ![Photo-01](https://github.com/Guimli/NoTimeKeeper/blob/main/Images/OnKonamiBoard.jpg)
 
-During one of our evenings at the Arcade Club, a Koname Silent Scope cabinet displayed the dreaded error message: P1!
+During one of our evenings at the Arcade Club, a Konami Silent Scope cabinet displayed the dreaded error message: P1!
 This error is known to indicate that the TimeKeeper, a NVRAM used to store the cabinet's settings and scores is running low on battery power and needs replacing.
 The M48T58Y, which is the name of this NVRAM in Konami cabinet of this generation, has two functions: non-volatile RAM and internal clock. And the battery life is given as 10 years. So this component has to be replaced every 10 years.
 25 years after the creation of this terminal, I thought that there was probably a better component to replace this expensive perishable component. So I naturally turned my attention to F-RAM. F-RAM is non-volatile RAM, but does not require a battery. And it has a data retention time of 120 years. Much longer than NAND or NOR memory. We still have to manage the internal clock. But while browsing the forums, I discovered that the only game that really needs the clock is Battle Tryst. Last but not least, the M48T58Y has two ChipEnable pins. One is active high and the other is active low. Although SilentScope doesn't use the ChipEnable in its high state, as I couldn't check that it was the same on all Konami terminals of this generation, and to facilitate compatibility in my universal programmer, I added a bit of combinatorial logic to recreate the missing ChipEnable on the F-RAM.
